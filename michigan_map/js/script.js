@@ -25,13 +25,13 @@ function setColorDIV(population) {
 
 function setColorPD(population) {
 	var d = parseInt(population)
-	return d > 2500 ? '#005824' :
-           d > 2000  ? '#238b45' :
-           d > 1500  ? '#41ae76' :
-           d > 1000  ? '#66c2a4' :
-           d > 500   ? '#99d8c9' :
-           d > 250   ? '#ccece6' :
-           d > 100   ? '#edf8fb' :
+	return d > 3500 ? '#FF0000' :
+           d > 3000  ? '#FF3300' :
+           d > 2500  ? '#FF6600' :
+           d > 2000  ? '#FF9900' :
+           d > 1500   ? '#FFCC00' :
+           d > 1000   ? '#FFFF00' :
+           d > 500   ? '#FFFF99' :
                       '#FFF';
 }
 
@@ -116,7 +116,7 @@ legend.onAdd = function (map) {
 
     var div = L.DomUtil.create('div', 'info legend'),
         //grades = [1, 50, 100, 250, 500, 750, 1000, 1500],
-        grades = [1, 100, 250, 500, 1000, 1500, 2000, 2500],
+        grades = [1, 500, 1000, 1500, 2000, 2500, 3000, 3500],
         labels = [];
 
     // loop through our density intervals and generate a label with a colored square for each interval
