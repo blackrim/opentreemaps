@@ -1,16 +1,19 @@
-// Call Stamen tiles
 var layer = new L.StamenTileLayer('toner-background');
 
-// Initialize our map
-// The first setview parameter is the lat, long
-// Of the initial zoom
-// The second parameter is the zoom level
-var map = new L.Map('map').setView([44.75,-86],7);
+//var map = new L.Map('map').setView([44.75,-86],7);
+var map = new L.Map('map', {
+	center: [44.75,-86],
+	zoomControl:false,
+	zoom: 7,
+	minZoom: 7,
+	maxZoom: 16
+})
+
 map.addLayer(layer);
 
-// Set the color of the individual county
-// All colors are shades of green
-// The more population, the darker the county will appear on the map
+map.addControl(new L.Control.ZoomMin());
+
+
 function setColorDIV(population) {
 	var d = parseInt(population)
 	return d > 1500 ? '#005824' :
