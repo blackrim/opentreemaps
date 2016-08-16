@@ -118,30 +118,47 @@ function onEachFeature(feature, layer) {
 var geojson;
 // ... our listeners
 geojson = L.geoJson(mi_counties, {
-	style: setStylePD,
-	onEachFeature: onEachFeature
-}).addTo(map);
-
-
-L.easyButton( '<span class="star" title="toggle diversity">D</span>', function(){
-	map.removeLayer(geojson);
-  geojson = L.geoJson(mi_counties, {
 	style: setStyleDIV,
 	onEachFeature: onEachFeature
-	}).addTo(map);
-	legendPD.removeFrom(map);
-	legendDIV.addTo(map);
 }).addTo(map);
 
-L.easyButton( '<span class="star" title="toggle phylo diversity">P</span>', function(){
-	map.removeLayer(geojson);
-  geojson = L.geoJson(mi_counties, {
-	style: setStylePD,
-	onEachFeature: onEachFeature
-	}).addTo(map);
-	legendDIV.removeFrom(map);
-	legendPD.addTo(map);
+
+L.easyButton({
+  states:[
+    {
+      icon: '<span class="star" title="toggle diversity">D</span>',
+      onClick: function(){
+		map.removeLayer(geojson);
+  		geojson = L.geoJson(mi_counties, {
+			style: setStyleDIV,
+			onEachFeature: onEachFeature
+			}).addTo(map);
+		legendPD.removeFrom(map);
+		legendDIV.addTo(map);
+		}
+    }
+  ]
 }).addTo(map);
+
+L.easyButton({
+  states:[
+    {
+      icon: '<span class="star" title="toggle phylo diversity">P</span>',
+      onClick: function(){
+		map.removeLayer(geojson);
+  		geojson = L.geoJson(mi_counties, {
+			style: setStylePD,
+			onEachFeature: onEachFeature
+			}).addTo(map);
+		legendDIV.removeFrom(map);
+		legendPD.addTo(map);
+		}
+    }
+  ]
+}).addTo(map);
+
+
+
 
 var info = L.control();
 
