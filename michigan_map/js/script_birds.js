@@ -123,7 +123,7 @@ geojson = L.geoJson(mi_counties, {
 }).addTo(map);
 
 
-L.easyButton( '<span class="star">D</span>', function(){
+L.easyButton( '<span class="star" title="toggle diversity">D</span>', function(){
 	map.removeLayer(geojson);
   geojson = L.geoJson(mi_counties, {
 	style: setStyleDIV,
@@ -133,7 +133,7 @@ L.easyButton( '<span class="star">D</span>', function(){
 	legendDIV.addTo(map);
 }).addTo(map);
 
-L.easyButton( '<span class="star">P</span>', function(){
+L.easyButton( '<span class="star" title="toggle phylo diversity">P</span>', function(){
 	map.removeLayer(geojson);
   geojson = L.geoJson(mi_counties, {
 	style: setStylePD,
