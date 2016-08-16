@@ -32,13 +32,13 @@ map.addControl(new L.Control.ZoomMin())
 // The more population, the darker the county will appear on the map
 function setColorDIV(population) {
 	var d = parseInt(population)
-	return d > 160 ? '#FF0000' :
-           d > 150  ? '#FF3300' :
-           d > 140  ? '#FF6600' :
-           d > 130  ? '#FF9900' :
-           d > 120   ? '#FFCC00' :
-           d > 110   ? '#FFFF00' :
-           d > 100   ? '#FFFF99' :
+	return d > 160 ? '#003434' :
+           d > 150  ? '#006666' :
+           d > 140  ? '#009999' :
+           d > 130  ? '#33CCCC' :
+           d > 120   ? '#66FFFF' :
+           d > 110   ? '#99FFFF' :
+           d > 100   ? '#CCFFFF' :
                       '#FFF';
 }
 
@@ -79,6 +79,15 @@ function setStyleDIV(feature) {
 	}
 }
 
+function setStyleDEF(feature) {
+	return {
+		opacity: 1,
+		weight: 2,
+		color: "#FFF",
+		dashArray:'3',
+	}
+}
+
 function highlightFeature(e) {
     var layer = e.target;
 
@@ -105,6 +114,7 @@ function zoomToFeature(e) {
 }
 
 function onEachFeature(feature, layer) {
+
     layer.on({
         mouseover: highlightFeature,
         mouseout: resetHighlight,
@@ -118,8 +128,8 @@ function onEachFeature(feature, layer) {
 var geojson;
 // ... our listeners
 geojson = L.geoJson(mi_counties, {
-	style: setStyleDIV,
-	onEachFeature: onEachFeature
+	style: setStyleDEF,
+//	onEachFeature: onEachFeature
 }).addTo(map);
 
 
@@ -173,7 +183,7 @@ info.update = function (props) {
     this._div.innerHTML = '<h4>County Bird Diversity</h4>' +  (props ?
         '<b>' + props.name + '</b><br />' + props.population + ' species' + 
         '<br />'+props.diversity+' phylo div (no BL)</sup>'
-        : 'Hover over a county');
+        : 'Click "D" for diversity or <br > "P" for phylo diversity <br />and hover over a county');
 };
 
 info.addTo(map);
@@ -214,7 +224,6 @@ legendDIV.onAdd = function (map) {
 
     return div;
 };
-
 
 legendPD.addTo(map);
 

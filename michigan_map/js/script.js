@@ -32,13 +32,13 @@ map.addControl(new L.Control.ZoomMin())
 // The more population, the darker the county will appear on the map
 function setColorDIV(population) {
 	var d = parseInt(population)
-	return d > 1500 ? '#FF0000' :
-           d > 1000  ? '#FF3300' :
-           d > 750  ? '#FF6600' :
-           d > 500  ? '#FF9900' :
-           d > 250   ? '#FFCC00' :
-           d > 100   ? '#FFFF00' :
-           d > 50   ? '#FFFF99' :
+	return d > 1500 ? '#003434' :
+           d > 1000  ? '#006666' :
+           d > 750  ? '#009999' :
+           d > 500  ? '#33CCCC' :
+           d > 250   ? '#66FFFF' :
+           d > 100   ? '#99FFFF' :
+           d > 50   ? '#CCFFFF' :
                       '#FFF';
 }
 
@@ -76,6 +76,15 @@ function setStyleDIV(feature) {
 		dashArray:'3',
 		fillColor: setColorDIV(feature.properties.population),
 		fillOpacity: 0.8
+	}
+}
+
+function setStyleDEF(feature) {
+	return {
+		opacity: 1,
+		weight: 2,
+		color: "#FFF",
+		dashArray:'3',
 	}
 }
 
@@ -117,31 +126,33 @@ function onEachFeature(feature, layer) {
 // And add to the map
 var geojson;
 // ... our listeners
-geojson = L.geoJson(mi_counties, {
-	style: setStylePD,
-	onEachFeature: onEachFeature
-}).addTo(map);
+ geojson = L.geoJson(mi_counties, {
+ 	style: setStyleDEF,
+// 	onEachFeature: onEachFeature
+ }).addTo(map);
 
 
-L.easyButton( '<span class="star" title="toggle diversity">D</span>', function(){
+var toggled = L.easyButton( '<span class="star" title="toggle diversity">D</span>', function(){
 	map.removeLayer(geojson);
-  geojson = L.geoJson(mi_counties, {
-	style: setStyleDIV,
-	onEachFeature: onEachFeature
-	}).addTo(map);
+  	geojson = L.geoJson(mi_counties, {
+		style: setStyleDIV,
+		onEachFeature: onEachFeature
+		}).addTo(map);
 	legendPD.removeFrom(map);
 	legendDIV.addTo(map);
-}).addTo(map);
+});
+toggled.addTo(map);
 
-L.easyButton( '<span class="star" title="toggle phylo diversity">P</span>', function(){
+var toggledp = L.easyButton( '<span class="star" title="toggle phylo diversity">P</span>', function(){
 	map.removeLayer(geojson);
-  geojson = L.geoJson(mi_counties, {
-	style: setStylePD,
-	onEachFeature: onEachFeature
-	}).addTo(map);
+  	geojson = L.geoJson(mi_counties, {
+		style: setStylePD,
+		onEachFeature: onEachFeature
+		}).addTo(map);
 	legendDIV.removeFrom(map);
 	legendPD.addTo(map);
-}).addTo(map);
+});
+toggledp.addTo(map);
 
 var info = L.control();
 
@@ -156,7 +167,7 @@ info.update = function (props) {
     this._div.innerHTML = '<h4>County Plant Diversity</h4>' +  (props ?
         '<b>' + props.name + '</b><br />' + props.population + ' species' + 
         '<br />'+props.diversity+' phylo div (no BL)</sup>'
-        : 'Hover over a county');
+        : 'Click "D" for diversity or <br > "P" for phylo diversity <br />and hover over a county');
 };
 
 info.addTo(map);
