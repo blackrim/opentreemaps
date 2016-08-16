@@ -7,24 +7,17 @@ var layer = new L.StamenTileLayer('toner-background');
 // The second parameter is the zoom level
 var map = new L.Map('map', {
 	center: [44.75,-86],
-	zoomControl:false,
+	zoomControl:true,
 	zoom: 7,
 	minZoom: 7,
 	maxZoom: 16
 })
 
-//var map = L.map("map", {
-//  layers: L.tileLayer("http://{s}.tile.cloudmade.com/API-key/997/256/{z}/{x}/{y}.png"),
-//  center: [51.505, -0.09],
-//  zoom: 3,
-//  minZoom: 2,
-//  maxZoom: 16,
-//  zoomControl: false
-//})
-
-
 map.addLayer(layer);
-map.addControl(new L.Control.ZoomMin())
+
+L.easyButton( 'fa-globe', function(){
+  map.setView([44.75,-86], 4);
+}).addTo(map);
 
 
 // Set the color of the individual county
