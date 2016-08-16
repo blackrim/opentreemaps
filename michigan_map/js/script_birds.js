@@ -32,25 +32,25 @@ map.addControl(new L.Control.ZoomMin())
 // The more population, the darker the county will appear on the map
 function setColorDIV(population) {
 	var d = parseInt(population)
-	return d > 150 ? '#FF0000' :
-           d > 140  ? '#FF3300' :
-           d > 130  ? '#FF6600' :
-           d > 120  ? '#FF9900' :
-           d > 110   ? '#FFCC00' :
-           d > 100   ? '#FFFF00' :
-           d > 90   ? '#FFFF99' :
+	return d > 160 ? '#FF0000' :
+           d > 150  ? '#FF3300' :
+           d > 140  ? '#FF6600' :
+           d > 130  ? '#FF9900' :
+           d > 120   ? '#FFCC00' :
+           d > 110   ? '#FFFF00' :
+           d > 100   ? '#FFFF99' :
                       '#FFF';
 }
 
 function setColorPD(population) {
 	var d = parseInt(population)
-	return d > 550 ? '#FF0000' :
-           d > 540  ? '#FF3300' :
-           d > 530  ? '#FF6600' :
-           d > 520  ? '#FF9900' :
+	return d > 590 ? '#FF0000' :
+           d > 570  ? '#FF3300' :
+           d > 550  ? '#FF6600' :
+           d > 530  ? '#FF9900' :
            d > 510   ? '#FFCC00' :
-           d > 500   ? '#FFFF00' :
-           d > 490   ? '#FFFF99' :
+           d > 490   ? '#FFFF00' :
+           d > 470   ? '#FFFF99' :
                       '#FFF';
 }
 
@@ -166,7 +166,7 @@ legendPD.onAdd = function (map) {
 
     var div = L.DomUtil.create('div', 'info legend'),
         //grades = [1, 50, 100, 250, 500, 750, 1000, 1500],
-        grades = [1, 490, 500, 510, 520, 530, 540, 550],
+        grades = [1, 470, 490, 510, 530, 550, 570, 590],
         labels = [];
 
     // loop through our density intervals and generate a label with a colored square for each interval
@@ -184,7 +184,7 @@ var legendDIV = L.control({position: 'bottomright'});
 legendDIV.onAdd = function (map) {
 
     var div = L.DomUtil.create('div', 'info legend'),
-        grades = [1, 90, 100, 110, 120, 130, 140, 150],
+        grades = [1, 100, 110, 120, 130, 140, 150, 160],
         //grades = [1, 500, 1000, 1500, 2000, 2500, 3000, 3500],
         labels = [];
 
