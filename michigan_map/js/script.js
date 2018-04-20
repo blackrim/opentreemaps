@@ -170,7 +170,7 @@ legendPD.onAdd = function (map) {
 
     var div = L.DomUtil.create('div', 'info legend'),
         //grades = [1, 50, 100, 250, 500, 750, 1000, 1500],
-        grades = [1, 500, 1000, 1500, 2000, 2500, 3000, 3500],
+        grades = [1, 10000, 20000, 25000, 30000, 35000, 40000, 45000],
         labels = [];
 
     // loop through our density intervals and generate a label with a colored square for each interval
