@@ -1,0 +1,10 @@
+michigan/
+florida/
+*.py
+*.pyc
+phyx.log
+michigan_maps_new_lexi/
+MI_FloraSpeciesLocationData2018-02-15*
+MI_FloraSpecimenRecords.xlsx
+leaflet-maps-intro-master/
+vas_opentree_5.tre*
