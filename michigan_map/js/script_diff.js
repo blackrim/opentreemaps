@@ -37,13 +37,13 @@ function setColorDIV(population) {
 
 function setColorPD(population) {
 	var d = parseInt(population)
-	return d > 30000 ? '#FF9900' :
-           d > 20000  ? '#FFCC00' :
-           d > 10000  ? '#FFFF00' :
-           d > 0  ? '#FFFF99' :
-           d > -10000   ? '#CCFFFF' :
-           d > -20000   ? '#99FFFF' :
-           d > -30000   ? '#66FFFF' :
+	return d > 30000 ? '#0068FF' :
+           d > 20000  ? '#388AFF' :
+           d > 10000  ? '#74ADFE' :
+           d > 0  ? '#AACDFF' :
+           d > -10000   ? '#FF7676' :
+           d > -20000   ? '##FF3F3F' :
+           d > -30000   ? '#FF0000' :
                       '#FFF';
 }
 
