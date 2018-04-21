@@ -42,7 +42,7 @@ function setColorPD(population) {
            d > 10000  ? '#74ADFE' :
            d > 0  ? '#AACDFF' :
            d > -10000   ? '#FF7676' :
-           d > -20000   ? '##FF3F3F' :
+           d > -20000   ? '#FF3F3F' :
            d > -30000   ? '#FF0000' :
                       '#FFF';
 }
