@@ -25,13 +25,14 @@ L.easyButton( 'fa-globe', function(){
 // The more population, the darker the county will appear on the map
 function setColorDIV(population) {
 	var d = parseInt(population)
-	return d > 1500 ? '#003434' :
-           d > 1000  ? '#006666' :
-           d > 750  ? '#009999' :
-           d > 500  ? '#33CCCC' :
-           d > 250   ? '#66FFFF' :
-           d > 100   ? '#99FFFF' :
-           d > 50   ? '#CCFFFF' :
+	return d > 600 ? '#39ac39' :
+           d > 400  ? '#79d279' :
+           d > 200  ? '#b3e6b3' :
+           d > 0  ? '#ecf9ec' :
+           d > -200   ? '#FF7676' :
+           d > -400   ? '#FF3F3F' :
+           d > -600   ? '#FF0000' :
+           d > -1000   ? '#FF0000' :
                       '#FFF';
 }
 
@@ -172,8 +173,7 @@ var legendPD = L.control({position: 'bottomright'});
 legendPD.onAdd = function (map) {
 
     var div = L.DomUtil.create('div', 'info legend'),
-        //grades = [1, 50, 100, 250, 500, 750, 1000, 1500],
-        grades = [-30000, -20000, -10000, 1, 10000, 20000, 30000, 40000],
+        grades = [40000,30000,20000,10000, 1, -10000, -20000, -30000],
         labels = [];
 
     // loop through our density intervals and generate a label with a colored square for each interval
@@ -191,8 +191,7 @@ var legendDIV = L.control({position: 'bottomright'});
 legendDIV.onAdd = function (map) {
 
     var div = L.DomUtil.create('div', 'info legend'),
-        grades = [1, 50, 100, 250, 500, 750, 1000, 1500],
-        //grades = [1, 500, 1000, 1500, 2000, 2500, 3000, 3500],
+        grades = [900, 600, 300, 1, -300, -600, -900],
         labels = [];
 
     // loop through our density intervals and generate a label with a colored square for each interval
