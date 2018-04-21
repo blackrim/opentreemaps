@@ -138,7 +138,7 @@ var mi_counties = {
                 "diversity":"14541",
                 "geoid":"05000US26003",
                 "name":"Alger County, MI",
-                "population":"10000000"
+                "population":"402"
             },
             "type":"Feature"
         },
@@ -263,7 +263,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"-3144",
                 "geoid":"05000US26031",
-                "name":"Cheboygan County, MI"
+                "name":"Cheboygan County, MI",
+                "population":"-159"
             },
             "type":"Feature"
         },
@@ -324,7 +325,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"22215",
                 "geoid":"05000US26015",
-                "name":"Barry County, MI"
+                "name":"Barry County, MI",
+                "population":"572"
             },
             "type":"Feature"
         },
@@ -381,7 +383,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"-9784",
                 "geoid":"05000US26077",
-                "name":"Kalamazoo County, MI"
+                "name":"Kalamazoo County, MI",
+                "population":"-401"
             },
             "type":"Feature"
         },
@@ -982,7 +985,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"-4033",
                 "geoid":"05000US26109",
-                "name":"Menominee County, MI"
+                "name":"Menominee County, MI",
+                "population":"-61"
             },
             "type":"Feature"
         },
@@ -1163,7 +1167,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"16521",
                 "geoid":"05000US26055",
-                "name":"Grand Traverse County, MI"
+                "name":"Grand Traverse County, MI",
+                "population":"428"
             },
             "type":"Feature"
         },
@@ -1308,7 +1313,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"5567",
                 "geoid":"05000US26097",
-                "name":"Mackinac County, MI"
+                "name":"Mackinac County, MI",
+                "population":"158"
             },
             "type":"Feature"
         },
@@ -1405,7 +1411,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"25034",
                 "geoid":"05000US26079",
-                "name":"Kalkaska County, MI"
+                "name":"Kalkaska County, MI",
+                "population":"571"
             },
             "type":"Feature"
         },
@@ -1462,7 +1469,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"7754",
                 "geoid":"05000US26139",
-                "name":"Ottawa County, MI"
+                "name":"Ottawa County, MI",
+                "population":"115"
             },
             "type":"Feature"
         },
@@ -1535,7 +1543,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"11761",
                 "geoid":"05000US26143",
-                "name":"Roscommon County, MI"
+                "name":"Roscommon County, MI",
+                "population":"311"
             },
             "type":"Feature"
         },
@@ -1624,7 +1633,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"19126",
                 "geoid":"05000US26145",
-                "name":"Saginaw County, MI"
+                "name":"Saginaw County, MI",
+                "population":"417"
             },
             "type":"Feature"
         },
@@ -1685,7 +1695,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"17483",
                 "geoid":"05000US26129",
-                "name":"Ogemaw County, MI"
+                "name":"Ogemaw County, MI",
+                "population":"363"
             },
             "type":"Feature"
         },
@@ -1770,7 +1781,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"21102",
                 "geoid":"05000US26157",
-                "name":"Tuscola County, MI"
+                "name":"Tuscola County, MI",
+                "population":"461"
             },
             "type":"Feature"
         },
@@ -1859,7 +1871,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"24801",
                 "geoid":"05000US26105",
-                "name":"Mason County, MI"
+                "name":"Mason County, MI",
+                "population":"666"
             },
             "type":"Feature"
         },
@@ -1932,7 +1945,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"-8731",
                 "geoid":"05000US26065",
-                "name":"Ingham County, MI"
+                "name":"Ingham County, MI",
+                "population":"-386"
             },
             "type":"Feature"
         },
@@ -2037,7 +2051,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"12146",
                 "geoid":"05000US26131",
-                "name":"Ontonagon County, MI"
+                "name":"Ontonagon County, MI",
+                "population":"405"
             },
             "type":"Feature"
         },
@@ -2086,7 +2101,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"2476",
                 "geoid":"05000US26023",
-                "name":"Branch County, MI"
+                "name":"Branch County, MI",
+                "population":"115"
             },
             "type":"Feature"
         },
@@ -2163,7 +2179,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"18661",
                 "geoid":"05000US26119",
-                "name":"Montmorency County, MI"
+                "name":"Montmorency County, MI",
+                "population":"456"
             },
             "type":"Feature"
         },
@@ -2224,7 +2241,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"7830",
                 "geoid":"05000US26133",
-                "name":"Osceola County, MI"
+                "name":"Osceola County, MI",
+                "population":"141"
             },
             "type":"Feature"
         },
@@ -2277,7 +2295,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"12630",
                 "geoid":"05000US26165",
-                "name":"Wexford County, MI"
+                "name":"Wexford County, MI",
+                "population":"263"
             },
             "type":"Feature"
         },
@@ -2382,7 +2401,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"19473",
                 "geoid":"05000US26001",
-                "name":"Alcona County, MI"
+                "name":"Alcona County, MI",
+                "population":"471"
             },
             "type":"Feature"
         },
@@ -2439,7 +2459,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"6587",
                 "geoid":"05000US26005",
-                "name":"Allegan County, MI"
+                "name":"Allegan County, MI",
+                "population":"167"
             },
             "type":"Feature"
         },
@@ -2500,7 +2521,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"12765",
                 "geoid":"05000US26063",
-                "name":"Huron County, MI"
+                "name":"Huron County, MI",
+                "population":"308"
             },
             "type":"Feature"
         },
@@ -2557,7 +2579,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"26615",
                 "geoid":"05000US26059",
-                "name":"Hillsdale County, MI"
+                "name":"Hillsdale County, MI",
+                "population":"805"
             },
             "type":"Feature"
         },
@@ -2906,7 +2929,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"18241",
                 "geoid":"05000US26043",
-                "name":"Dickinson County, MI"
+                "name":"Dickinson County, MI",
+                "population":"430"
             },
             "type":"Feature"
         },
@@ -3135,7 +3159,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"11916",
                 "geoid":"05000US26033",
-                "name":"Chippewa County, MI"
+                "name":"Chippewa County, MI",
+                "population":"383"
             },
             "type":"Feature"
         },
@@ -3284,7 +3309,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"12417",
                 "geoid":"05000US26089",
-                "name":"Leelanau County, MI"
+                "name":"Leelanau County, MI",
+                "population":"395"
             },
             "type":"Feature"
         },
@@ -3337,7 +3363,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"10002",
                 "geoid":"05000US26035",
-                "name":"Clare County, MI"
+                "name":"Clare County, MI",
+                "population":"272"
             },
             "type":"Feature"
         },
@@ -3426,7 +3453,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"19584",
                 "geoid":"05000US26013",
-                "name":"Baraga County, MI"
+                "name":"Baraga County, MI",
+                "population":"505"
             },
             "type":"Feature"
         },
@@ -3539,7 +3567,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"22121",
                 "geoid":"05000US26007",
-                "name":"Alpena County, MI"
+                "name":"Alpena County, MI",
+                "population":"617"
             },
             "type":"Feature"
         },
@@ -3592,7 +3621,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"-8693",
                 "geoid":"05000US26057",
-                "name":"Gratiot County, MI"
+                "name":"Gratiot County, MI",
+                "population":"-293"
             },
             "type":"Feature"
         },
@@ -3901,7 +3931,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"-13694",
                 "geoid":"05000US26163",
-                "name":"Wayne County, MI"
+                "name":"Wayne County, MI",
+                "population":"-577"
             },
             "type":"Feature"
         },
@@ -3954,7 +3985,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"16234",
                 "geoid":"05000US26135",
-                "name":"Oscoda County, MI"
+                "name":"Oscoda County, MI",
+                "population":"395"
             },
             "type":"Feature"
         },
@@ -4051,7 +4083,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"697",
                 "geoid":"05000US26017",
-                "name":"Bay County, MI"
+                "name":"Bay County, MI",
+                "population":"-61"
             },
             "type":"Feature"
         },
@@ -4124,7 +4157,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"2124",
                 "geoid":"05000US26121",
-                "name":"Muskegon County, MI"
+                "name":"Muskegon County, MI",
+                "population":"-59"
             },
             "type":"Feature"
         },
@@ -4225,7 +4259,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"-3123",
                 "geoid":"05000US26083",
-                "name":"Keweenaw County, MI"
+                "name":"Keweenaw County, MI",
+                "population":"-128"
             },
             "type":"Feature"
         },
@@ -4338,7 +4373,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"-4515",
                 "geoid":"05000US26061",
-                "name":"Houghton County, MI"
+                "name":"Houghton County, MI",
+                "population":"-180"
             },
             "type":"Feature"
         },
@@ -4459,7 +4495,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"-3525",
                 "geoid":"05000US26027",
-                "name":"Cass County, MI"
+                "name":"Cass County, MI",
+                "population":"-80"
             },
             "type":"Feature"
         },
@@ -4520,7 +4557,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"15617",
                 "geoid":"05000US26039",
-                "name":"Crawford County, MI"
+                "name":"Crawford County, MI",
+                "population":"455"
             },
             "type":"Feature"
         },
@@ -4573,7 +4611,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"25219",
                 "geoid":"05000US26123",
-                "name":"Newaygo County, MI"
+                "name":"Newaygo County, MI",
+                "population":"716"
             },
             "type":"Feature"
         },
@@ -4634,7 +4673,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"-3582",
                 "geoid":"05000US26111",
-                "name":"Midland County, MI"
+                "name":"Midland County, MI",
+                "population":"-160"
             },
             "type":"Feature"
         },
@@ -4699,7 +4739,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"13363",
                 "geoid":"05000US26051",
-                "name":"Gladwin County, MI"
+                "name":"Gladwin County, MI",
+                "population":"244"
             },
             "type":"Feature"
         },
@@ -4780,7 +4821,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"1910",
                 "geoid":"05000US26161",
-                "name":"Washtenaw County, MI"
+                "name":"Washtenaw County, MI",
+                "population":"-42"
             },
             "type":"Feature"
         },
@@ -4825,7 +4867,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"18581",
                 "geoid":"05000US26107",
-                "name":"Mecosta County, MI"
+                "name":"Mecosta County, MI",
+                "population":"502"
             },
             "type":"Feature"
         },
@@ -4906,7 +4949,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"18058",
                 "geoid":"05000US26095",
-                "name":"Luce County, MI"
+                "name":"Luce County, MI",
+                "population":"443"
             },
             "type":"Feature"
         },
@@ -4971,7 +5015,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"22207",
                 "geoid":"05000US26127",
-                "name":"Oceana County, MI"
+                "name":"Oceana County, MI",
+                "population":"525"
             },
             "type":"Feature"
         },
@@ -5044,7 +5089,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"1505",
                 "geoid":"05000US26075",
-                "name":"Jackson County, MI"
+                "name":"Jackson County, MI",
+                "population":"-14"
             },
             "type":"Feature"
         },
@@ -5105,7 +5151,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"11822",
                 "geoid":"05000US26117",
-                "name":"Montcalm County, MI"
+                "name":"Montcalm County, MI",
+                "population":"240"
             },
             "type":"Feature"
         },
@@ -5174,7 +5221,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"15429",
                 "geoid":"05000US26151",
-                "name":"Sanilac County, MI"
+                "name":"Sanilac County, MI",
+                "population":"363"
             },
             "type":"Feature"
         },
@@ -5251,7 +5299,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"5526",
                 "geoid":"05000US26155",
-                "name":"Shiawassee County, MI"
+                "name":"Shiawassee County, MI",
+                "population":"81"
             },
             "type":"Feature"
         },
@@ -5304,7 +5353,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"5544",
                 "geoid":"05000US26045",
-                "name":"Eaton County, MI"
+                "name":"Eaton County, MI",
+                "population":"142"
             },
             "type":"Feature"
         },
@@ -5405,7 +5455,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"9571",
                 "geoid":"05000US26149",
-                "name":"St. Joseph County, MI"
+                "name":"St. Joseph County, MI",
+                "population":"228"
             },
             "type":"Feature"
         },
@@ -5482,7 +5533,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"15884",
                 "geoid":"05000US26153",
-                "name":"Schoolcraft County, MI"
+                "name":"Schoolcraft County, MI",
+                "population":"536"
             },
             "type":"Feature"
         },
@@ -5723,7 +5775,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"-19835",
                 "geoid":"05000US26147",
-                "name":"St. Clair County, MI"
+                "name":"St. Clair County, MI",
+                "population":"-703"
             },
             "type":"Feature"
         },
@@ -5768,7 +5821,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"15824",
                 "geoid":"05000US26073",
-                "name":"Isabella County, MI"
+                "name":"Isabella County, MI",
+                "population":"448"
             },
             "type":"Feature"
         },
@@ -5829,7 +5883,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"30344",
                 "geoid":"05000US26019",
-                "name":"Benzie County, MI"
+                "name":"Benzie County, MI",
+                "population":"864"
             },
             "type":"Feature"
         },
@@ -5890,7 +5945,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"-25533",
                 "geoid":"05000US26081",
-                "name":"Kent County, MI"
+                "name":"Kent County, MI",
+                "population":"-942"
             },
             "type":"Feature"
         },
@@ -6083,7 +6139,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"-938",
                 "geoid":"05000US26047",
-                "name":"Emmet County, MI"
+                "name":"Emmet County, MI",
+                "population":"-44"
             },
             "type":"Feature"
         },
@@ -6364,7 +6421,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"840",
                 "geoid":"05000US26115",
-                "name":"Monroe County, MI"
+                "name":"Monroe County, MI",
+                "population":"-14"
             },
             "type":"Feature"
         },
@@ -6721,7 +6779,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"5686",
                 "geoid":"05000US26053",
-                "name":"Gogebic County, MI"
+                "name":"Gogebic County, MI",
+                "population":"205"
             },
             "type":"Feature"
         },
@@ -6794,7 +6853,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"9911",
                 "geoid":"05000US26101",
-                "name":"Manistee County, MI"
+                "name":"Manistee County, MI",
+                "population":"311"
             },
             "type":"Feature"
         },
@@ -6987,7 +7047,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"14713",
                 "geoid":"05000US26009",
-                "name":"Antrim County, MI"
+                "name":"Antrim County, MI",
+                "population":"381"
             },
             "type":"Feature"
         },
@@ -7052,7 +7113,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"15816",
                 "geoid":"05000US26069",
-                "name":"Iosco County, MI"
+                "name":"Iosco County, MI",
+                "population":"399"
             },
             "type":"Feature"
         },
@@ -7133,7 +7195,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"21292",
                 "geoid":"05000US26085",
-                "name":"Lake County, MI"
+                "name":"Lake County, MI",
+                "population":"434"
             },
             "type":"Feature"
         },
@@ -7210,7 +7273,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"1353",
                 "geoid":"05000US26093",
-                "name":"Livingston County, MI"
+                "name":"Livingston County, MI",
+                "population":"-11"
             },
             "type":"Feature"
         },
@@ -7291,7 +7355,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"17654",
                 "geoid":"05000US26041",
-                "name":"Delta County, MI"
+                "name":"Delta County, MI",
+                "population":"574"
             },
             "type":"Feature"
         },
@@ -7364,7 +7429,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"-4712",
                 "geoid":"05000US26159",
-                "name":"Van Buren County, MI"
+                "name":"Van Buren County, MI",
+                "population":"-233"
             },
             "type":"Feature"
         },
@@ -7425,7 +7491,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"6642",
                 "geoid":"05000US26021",
-                "name":"Berrien County, MI"
+                "name":"Berrien County, MI",
+                "population":"230"
             },
             "type":"Feature"
         },
@@ -7498,7 +7565,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"10242",
                 "geoid":"05000US26113",
-                "name":"Missaukee County, MI"
+                "name":"Missaukee County, MI",
+                "population":"204"
             },
             "type":"Feature"
         },
@@ -7603,7 +7671,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"-2490",
                 "geoid":"05000US26099",
-                "name":"Macomb County, MI"
+                "name":"Macomb County, MI",
+                "population":"-70"
             },
             "type":"Feature"
         },
@@ -8188,7 +8257,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"13583",
                 "geoid":"05000US26071",
-                "name":"Iron County, MI"
+                "name":"Iron County, MI",
+                "population":"370"
             },
             "type":"Feature"
         },
@@ -8253,7 +8323,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"28042",
                 "geoid":"05000US26091",
-                "name":"Lenawee County, MI"
+                "name":"Lenawee County, MI",
+                "population":"1011"
             },
             "type":"Feature"
         },
@@ -8302,7 +8373,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"-8548",
                 "geoid":"05000US26067",
-                "name":"Ionia County, MI"
+                "name":"Ionia County, MI",
+                "population":"-279"
             },
             "type":"Feature"
         },
@@ -8371,7 +8443,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"17612",
                 "geoid":"05000US26011",
-                "name":"Arenac County, MI"
+                "name":"Arenac County, MI",
+                "population":"366"
             },
             "type":"Feature"
         },
@@ -8432,7 +8505,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"5359",
                 "geoid":"05000US26025",
-                "name":"Calhoun County, MI"
+                "name":"Calhoun County, MI",
+                "population":"130"
             },
             "type":"Feature"
         },
@@ -8481,7 +8555,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"5530",
                 "geoid":"05000US26037",
-                "name":"Clinton County, MI"
+                "name":"Clinton County, MI",
+                "population":"115"
             },
             "type":"Feature"
         },
@@ -8598,7 +8673,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"13014",
                 "geoid":"05000US26141",
-                "name":"Presque Isle County, MI"
+                "name":"Presque Isle County, MI",
+                "population":"390"
             },
             "type":"Feature"
         },
@@ -8831,7 +8907,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"10661",
                 "geoid":"05000US26029",
-                "name":"Charlevoix County, MI"
+                "name":"Charlevoix County, MI",
+                "population":"332"
             },
             "type":"Feature"
         },
@@ -8916,7 +8993,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"17491",
                 "geoid":"05000US26137",
-                "name":"Otsego County, MI"
+                "name":"Otsego County, MI",
+                "population":"369"
             },
             "type":"Feature"
         },
@@ -8997,7 +9075,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"5147",
                 "geoid":"05000US26049",
-                "name":"Genesee County, MI"
+                "name":"Genesee County, MI",
+                "population":"93"
             },
             "type":"Feature"
         },
@@ -9082,7 +9161,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"19992",
                 "geoid":"05000US26087",
-                "name":"Lapeer County, MI"
+                "name":"Lapeer County, MI",
+                "population":"497"
             },
             "type":"Feature"
         },
@@ -9159,7 +9239,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"6514",
                 "geoid":"05000US26103",
-                "name":"Marquette County, MI"
+                "name":"Marquette County, MI",
+                "population":"207"
             },
             "type":"Feature"
         },
@@ -9216,7 +9297,8 @@ var mi_counties = {
             "properties":{
                 "diversity":"-11261",
                 "geoid":"05000US26125",
-                "name":"Oakland County, MI"
+                "name":"Oakland County, MI",
+                "population":"-488"
             },
             "type":"Feature"
         }
