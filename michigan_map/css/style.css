@@ -1,6 +1,26 @@
+.container {
+  display: table;
+  width: 100%;
+}
+
 #map {
+	position: absolute;
+	left: 0px;
 	width: 800px;
 	height: 800px;
+}
+
+#div_man {
+	position: absolute;
+	left: 800px;
+	/*width: 600px;*/
+	/*height: 800px;*/
+	background-color: #F8F9DE;
+}
+
+.inner {
+	width: 600px;
+	height: 800px
 }
 
 .info {

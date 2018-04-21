@@ -104,6 +104,9 @@ function resetHighlight(e) {
 
 function zoomToFeature(e) {
     map.fitBounds(e.target.getBounds());
+    var layer = e.target;
+    n = layer.feature.properties.name.split(' ')[0];//.toLowerCase();
+    document.getElementById('div_man').innerHTML='<object class=inner type="text/html" data="countydata/'+n+'.html" ></object>';
 }
 
 function onEachFeature(feature, layer) {
