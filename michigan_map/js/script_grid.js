@@ -6,7 +6,7 @@ var layer = new L.StamenTileLayer('toner-background');
 // Of the initial zoom
 // The second parameter is the zoom level
 var map = new L.Map('map', {
-	center: [44.75,-86],
+	center: [44.75,-85.5],
 	zoomControl:true,
 	zoom: 7,
 	minZoom: 7,
@@ -25,26 +25,25 @@ L.easyButton( 'fa-globe', function(){
 // The more population, the darker the county will appear on the map
 function setColorDIV(population) {
 	var d = parseInt(population)
-	return d > 600 ? '#39ac39' :
-           d > 400  ? '#79d279' :
-           d > 200  ? '#b3e6b3' :
-           d > 0  ? '#ecf9ec' :
-           d > -200   ? '#FF7676' :
-           d > -400   ? '#FF3F3F' :
-           d > -600   ? '#FF0000' :
-           d > -1000   ? '#FF0000' :
+	return d > 130 ? '#003434' :
+           d > 110  ? '#006666' :
+           d > 90  ? '#009999' :
+           d > 70  ? '#33CCCC' :
+           d > 50   ? '#66FFFF' :
+           d > 30   ? '#99FFFF' :
+           d > 10   ? '#CCFFFF' :
                       '#FFF';
 }
 
 function setColorPD(population) {
 	var d = parseInt(population)
-	return d > 30000 ? '#0068FF' :
-           d > 20000  ? '#388AFF' :
-           d > 10000  ? '#74ADFE' :
-           d > 0  ? '#AACDFF' :
-           d > -10000   ? '#FF7676' :
-           d > -20000   ? '#FF3F3F' :
-           d > -30000   ? '#FF0000' :
+	return d > 30000 ? '#FF0000' :
+           d > 25000  ? '#FF3300' :
+           d > 20000  ? '#FF6600' :
+           d > 15000  ? '#FF9900' :
+           d > 10000   ? '#FFCC00' :
+           d > 5000   ? '#FFFF00' :
+           d > 1000   ? '#FFFF99' :
                       '#FFF';
 }
 
@@ -55,7 +54,7 @@ function setStylePD(feature) {
 	return {
 		opacity: 1,
 		weight: 2,
-		color: "#FFF",
+		color: "#999",
 		dashArray:'3',
 		fillColor: setColorPD(feature.properties.diversity),
 		fillOpacity: 0.8
@@ -66,7 +65,7 @@ function setStyleDIV(feature) {
 	return {
 		opacity: 1,
 		weight: 2,
-		color: "#FFF",
+		color: "#888",
 		dashArray:'3',
 		fillColor: setColorDIV(feature.properties.population),
 		fillOpacity: 0.8
@@ -77,7 +76,7 @@ function setStyleDEF(feature) {
 	return {
 		opacity: 1,
 		weight: 2,
-		color: "#FFF",
+		color: "#888",
 		dashArray:'3',
 	}
 }
@@ -87,7 +86,7 @@ function highlightFeature(e) {
 
     layer.setStyle({
         weight: 2,
-        color: '#666',
+        color: '#888',
         dashArray: 3,
         fillOpacity: 0.7
     });
@@ -105,9 +104,6 @@ function resetHighlight(e) {
 
 function zoomToFeature(e) {
     map.fitBounds(e.target.getBounds());
-    var layer = e.target;
-    n = layer.feature.properties.name.replace(". ",".").split(' ')[0];//.toLowerCase();
-    document.getElementById('div_man').innerHTML='<object class=inner type="text/html" data="countydata/'+n+'.html" ></object>';
 }
 
 function onEachFeature(feature, layer) {
@@ -173,7 +169,8 @@ var legendPD = L.control({position: 'bottomright'});
 legendPD.onAdd = function (map) {
 
     var div = L.DomUtil.create('div', 'info legend'),
-        grades = [40000,30000,20000,10000, 1, -10000, -20000, -30000],
+        //grades = [1, 50, 100, 250, 500, 750, 1000, 1500],
+        grades = [1, 1000, 5000, 10000, 15000, 20000, 25000, 30000],
         labels = [];
 
     // loop through our density intervals and generate a label with a colored square for each interval
@@ -191,7 +188,8 @@ var legendDIV = L.control({position: 'bottomright'});
 legendDIV.onAdd = function (map) {
 
     var div = L.DomUtil.create('div', 'info legend'),
-        grades = [900, 600, 300, 1, -300, -600, -900],
+        grades = [1, 10, 30, 50, 70, 90, 110, 130],
+        //grades = [1, 500, 1000, 1500, 2000, 2500, 3000, 3500],
         labels = [];
 
     // loop through our density intervals and generate a label with a colored square for each interval
